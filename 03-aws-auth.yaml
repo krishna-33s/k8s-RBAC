@@ -6,11 +6,11 @@ data:
       - system:bootstrappers
       - system:nodes
       username: system:node:{{EC2PrivateDNSName}}
-  # mapUsers: |
-  #   - groups:
-  #     - krishna
-  #     userarn: arn:aws:iam::220719767845:user/krishna
-  #     username: krishna  
+  mapUsers: |
+    - groups:
+      - krishna
+      userarn: arn:aws:iam::220719767845:user/krishna
+      username: krishna  
 kind: ConfigMap
 metadata:
   creationTimestamp: "2026-08-03T06:55:51Z"
