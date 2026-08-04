@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: roboshop-pod
+  namespace: roboshop
+spec:
+  serviceAccountName: roboshop-service-account
+  containers:
+  - name: aws-container
+    image: amazon-aws-cli
+    command: ["sleep", "3600"] 
