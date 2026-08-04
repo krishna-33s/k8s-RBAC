@@ -8,11 +8,19 @@ data:
       username: system:node:{{EC2PrivateDNSName}}
   mapUsers: |
     - groups:
-      - krishna
+      - roboshop-trainee
       userarn: arn:aws:iam::220719767845:user/krishna
       username: krishna
     - groups:
-      - venkat
+      - roboshop-trainee
+      userarn: arn:aws:iam::220719767845:user/akshay
+      username: akshay
+    - groups:
+      - roboshop-trainee
+      userarn: arn:aws:iam::220719767845:user/ravi
+      username: ravi    
+    - groups:
+      - roboshop-admin
       userarn: arn:aws:iam::220719767845:user/venkat
       username: venkat      
 kind: ConfigMap
