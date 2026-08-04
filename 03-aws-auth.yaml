@@ -10,12 +10,15 @@ data:
     - groups:
       - krishna
       userarn: arn:aws:iam::220719767845:user/krishna
-      username: krishna    
+      username: krishna
+    - groups:
+      - venkat
+      userarn: arn:aws:iam::220719767845:user/venkat
+      username: venkat      
 kind: ConfigMap
 metadata:
   creationTimestamp: "2026-08-04T03:11:12Z"
   name: aws-auth
   namespace: kube-system
-  resourceVersion: "1228"
   uid: 2ed23167-9ec3-4f88-b971-c32ad8a2bee0
 
