@@ -7,5 +7,5 @@ spec:
   serviceAccountName: roboshop-service-account
   containers:
   - name: aws-container
-    image: amazon-aws-cli
+    image: amazon/aws-cli
     command: ["sleep", "3600"] 
