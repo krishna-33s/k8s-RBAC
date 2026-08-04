@@ -14,8 +14,8 @@ metadata:
   # "namespace" omitted since ClusterRoles are not namespaced
   name: cluster-admin
 rules:
-- apiGroups: [""]
-  resources: ["namespaces"]
+- apiGroups: ["storage.k8s.io"]
+  resources: ["storageclasses"]
   verbs: ["get", "watch", "list"]
 - apiGroups: [""]
   resources: ["persistentvolumes"]
